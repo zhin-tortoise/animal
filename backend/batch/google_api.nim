@@ -12,7 +12,7 @@ proc selectImg(html: XmlNode): seq[string] =
   return imgs
 
 proc insertImg(imgs: seq[string]): void =
-  let db = open("localhost", "root", "password", "animal")
+  let db = open("localhost", "root", "1A1}`^_asA", "animal")
   for img in imgs:
     db.exec(sql"INSERT INTO cat VALUES (?)", img)
   db.close()
